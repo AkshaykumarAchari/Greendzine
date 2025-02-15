@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.varifyotp_container{
+    height: 100vh;
+    width: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend", serif;
+}
+.varify_main_body{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 220px;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+.varify_left{
+    width: 480px;
+    height: 360px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.445);
+}
+.varify_otp{
+    width: 350px;
+    height: 54px;
+    padding-left: 20px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    background: rgba(19, 0, 0, 0.568);
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.varify_heading{
+    margin-top: 60px;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+}
+.varify_flex{
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 150px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.699);
+    font-weight: 500;
+}
+.resendotp{
+    cursor: pointer;
+    color: rgb(1, 1, 122);
+}
+.varify_btn{
+    background: linear-gradient(180deg, 
+    rgba(0, 255, 37, 0.6) 0%, 
+    rgba(0, 8, 1, 1) 100%, 
+    rgba(0, 4, 1, 0.99) 100%, 
+    rgba(0, 0, 0, 1) 100%, 
+    rgba(54, 165, 70, 0.5) 100%, 
+    rgba(54, 165, 70, 0.5) 100%);
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 17px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+.varify_right{
+    width: 480px;
+    height: 360px;
+    display: block;
+}
+.varify_p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+    margin-top: 160px;
+}
+
+
+@media (min-width: 200px) and (max-width: 500px) {
+    .varify_right{
+        display: none;
+    }
+    .varify_main_body{
+        border-radius: 30px;
+    }
+        .varify_left{
+            width: 300px;
+            height: 300px;
+            border-right: none;
+        }
+        .varify_otp{
+            width: 250px;
+            height: 40px;
+            padding-left: 15px;
+            border-radius: 10px;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+        .varify_heading{
+            margin-top: 60px;
+            font-size: 22px;
+            line-height: 35px;
+        }
+        .varify_btn{
+            height: 35px;
+            width: 130px;
+            border-radius: 17px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        .varify_flex{
+            width: 250px;
+            font-size: 14px;
+            gap: 50px;
+        }
+}
+@media (min-width: 501px) and (max-width: 677px) {
+    .varify_right{
+        display: none;
+    }
+    
+    .varify_left{
+        width: 400px;
+        height: 340px;
+        border-right: none;
+    }
+    
+}
+@media (min-width: 678px) and (max-width: 1000px) {
+    .varify_main_body{
+        border-radius: 30px;
+    }
+    .varify_left{
+        width: 330px;
+        height: 260px;
+    }
+    .varify_otp{
+        width: 280px;
+        height: 40px;
+        padding-left: 20px;
+        border-radius: 10px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .varify_flex{
+        width: 280px;
+        font-size: 16px;
+        gap: 90px;
+    }
+    .varify_heading{
+        margin-top: 55px;
+        font-size: 24px;
+    }
+    .varify_btn{
+        height: 35px;
+        width: 120px;
+        border-radius: 15px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .varify_right{
+        width: 300px;
+        height: 260px;
+        display: block;
+    }
+    .varify_p{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        margin-top: 110px;
+    }
+    }
